@@ -1,0 +1,19 @@
+{
+  "name": "ObjectGenexus",
+  "version": "0.0.1",
+  "description": "descripccion de Objetos",
+  "main": "index.js",
+  "authors": {
+    "name": "waready",
+    "email": "antonyjapura11@gmail.com"
+  },
+  "repository": "/ObjectGenexus",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

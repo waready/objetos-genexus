@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Data Selector | Objetos Genexus</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="descripccion de Objetos">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/objetos-genexus/assets/css/0.styles.079699a5.css" as="style"><link rel="preload" href="/objetos-genexus/assets/js/app.4f90df26.js" as="script"><link rel="preload" href="/objetos-genexus/assets/js/2.f7299349.js" as="script"><link rel="preload" href="/objetos-genexus/assets/js/12.abc2a28b.js" as="script"><link rel="prefetch" href="/objetos-genexus/assets/js/10.afca4a1e.js"><link rel="prefetch" href="/objetos-genexus/assets/js/11.d60e7aae.js"><link rel="prefetch" href="/objetos-genexus/assets/js/13.2a5f9051.js"><link rel="prefetch" href="/objetos-genexus/assets/js/14.5256fac5.js"><link rel="prefetch" href="/objetos-genexus/assets/js/15.10d71adc.js"><link rel="prefetch" href="/objetos-genexus/assets/js/16.18cc7c8a.js"><link rel="prefetch" href="/objetos-genexus/assets/js/3.8c8d5430.js"><link rel="prefetch" href="/objetos-genexus/assets/js/4.d392b92a.js"><link rel="prefetch" href="/objetos-genexus/assets/js/5.6017c508.js"><link rel="prefetch" href="/objetos-genexus/assets/js/6.1991384a.js"><link rel="prefetch" href="/objetos-genexus/assets/js/7.fdd2c329.js"><link rel="prefetch" href="/objetos-genexus/assets/js/8.4846d1c5.js"><link rel="prefetch" href="/objetos-genexus/assets/js/9.4cb14985.js">
+    <link rel="stylesheet" href="/objetos-genexus/assets/css/0.styles.079699a5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/objetos-genexus/" class="home-link router-link-active"><!----> <span class="site-name">Objetos Genexus</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/objetos-genexus/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/objetos-genexus/config/" class="nav-link">
+  Config
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/objetos-genexus/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/objetos-genexus/config/" class="nav-link">
+  Config
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/objetos-genexus/guide/" aria-current="page" class="sidebar-link">Introduction</a></li><li><a href="/objetos-genexus/guide/01-objeto.html" class="sidebar-link">Data Provider</a></li><li><a href="/objetos-genexus/guide/02-objeto.html" aria-current="page" class="active sidebar-link">Data Selector</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/objetos-genexus/guide/02-objeto.html#funcionalidad-gx" class="sidebar-link">Funcionalidad Gx</a></li><li class="sidebar-sub-header"><a href="/objetos-genexus/guide/02-objeto.html#estructura-y-ejemplos" class="sidebar-link">Estructura y Ejemplos</a></li><li class="sidebar-sub-header"><a href="/objetos-genexus/guide/02-objeto.html#aportes-bantotal-y-concluciones" class="sidebar-link">Aportes Bantotal y Concluciones</a></li></ul></li><li><a href="/objetos-genexus/guide/03-objeto.html" class="sidebar-link">Query</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="data-selector"><a href="#data-selector" class="header-anchor">#</a> Data Selector</h1> <p>Los Data Selectors pueden ser utilizados en varios objetos. La forma de usarlos es conceptualmente igual en todos lados aunque varía levemente la forma, dependiendo de si el objeto que lo usa tiene o no código asociado. En los que tienen código, como los procedimientos, se utiliza la cláusula USING DataSelectorName(). En los que no lo tienen, como puede ser un Grid, se referencian utilizando la <a href="https://wiki.genexus.com/commwiki/servlet/wiki?5361,Data+Selector+property" target="_blank" rel="noopener noreferrer">propiedad Data Selecto<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> en la que se especifica el DS y sus parámetros. Ver también <a href="https://wiki.genexus.com/commwiki/servlet/wiki?5362,Data+Selectors+en+Agregaciones" target="_blank" rel="noopener noreferrer">Data Selectors en Agregaciones<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, y <a href="https://wiki.genexus.com/commwiki/servlet/wiki?5386,Data+Selectors+in+Grids" target="_blank" rel="noopener noreferrer">Data Selectors in Grids<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p> <h2 id="funcionalidad-gx"><a href="#funcionalidad-gx" class="header-anchor">#</a> Funcionalidad Gx</h2> <p>Su funcionalidad es crear algunas sub consultas o filtros que se necesiten a un consulta en un <code>For Each</code>. Como sabemos para hacer un tipo de consulta a la <code>BD</code> y recorrer <code>transacciones</code> o (tablas) usamos <code>For Each</code> en el cual podemos definir los filtros que requieren usar con <code>Where</code> el puede ser remplazado con un <code>Data Selector</code> tal como veremos a continuación.</p> <img src="/objetos-genexus/img/05.png"> <p>Código que referencia al Data Selector ActiveCustomers</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each USING ActiveCustomers()
+        &amp;x = CustomerName
+        ...
+    EndFor
+</code></pre></div><p>El resultado de la navegación es exactamente el mismo que si se hubiera especificado el siguiente código:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each Where CustomerStatus = &quot;Active&quot;
+       &amp;x = CustomerName
+       ...
+    EndFor
+</code></pre></div><h2 id="estructura-y-ejemplos"><a href="#estructura-y-ejemplos" class="header-anchor">#</a> Estructura y Ejemplos</h2> <p>1- La definición del concepto &quot;reciente&quot; puede variar en el tiempo. Hoy puede referirse a lo que ocurrió en los últimos 5 días pero en algún momento puede cambiarse a 10, a 1, etc. Este DS tiene como objetivo encapsular el concepto mencionado de forma que cambiarlo implica sólo modificar el DS.</p> <img src="/objetos-genexus/img/06.png"> <p>Código que referencia al Data Selector anterior:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each USING CustomersRecentlyChanged( &amp;Today)
+       &amp;x = CustomerAddress
+       ...
+    EndFor
+</code></pre></div><p>El resultado de la navegación es exactamente el mismo que si se hubiera especificado el siguiente código:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each
+    Order (CustomerLastUpdate)
+    Where CustomerLastUpdate &gt;= &amp;Today - 5; // 5 days befor reference date
+    Where CustomerLastUpdate &lt;= &amp;Today
+       &amp;x = CustomerAddress
+       ...
+    EndFor
+</code></pre></div><p>2- La versatilidad de este objeto le permite anidar otros Data Selectors para aprovechar la navegación de éstos, a la vez que pueden ser reutilizados en forma independiente por cualquier otro Procedimiento donde sea necesario aplicarla. Tal es el caso del siguiente ejemplo, donde se desean listar todos los registros de África que tengan acceso a las costas oceánicas.</p> <img src="/objetos-genexus/img/07.png"> <p>La solución a la realidad implica que el DS AfricanOceanCities esté anidado en el otro. Esto se logra incluyendo el nombre del DS padre en la propiedad DataSelector.</p> <img src="/objetos-genexus/img/08.png"> <p>Código que referencia al Data Selector AfricanOceanCities:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each using AfricanOceanCities()  
+        Print AfricanOceanCities
+    EndFor
+</code></pre></div><p>El resultado de la navegación es exactamente el mismo que si se hubiera especificado el siguiente código:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each
+    where CountryWorldRegion = 5
+    where CityOceanAccess = &quot;Y&quot;
+        Print AfricanOceanCities
+    Endfor
+</code></pre></div><h2 id="aportes-bantotal-y-concluciones"><a href="#aportes-bantotal-y-concluciones" class="header-anchor">#</a> Aportes Bantotal y Concluciones</h2> <p>El aporte seria muy grande por que En <code>Bantotal</code> se usan muchos filtros puesto que exiten varias llaves foreaneas para hacer un filtro adecuado a una tabla y la reduccion de codigo con el uso de los nombres de los <code>Data Selector</code> tendriamos una mejor documentacion y orden en el codigo referente a grandes filtros que se tienen algunas tablas.</p> <img src="/objetos-genexus/img/09.png"> <p>en <code>Condition</code> tendriamos lo siguiente:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    FSD016_Filter = &amp;Ppgcod
+    FSD016_Filter = &amp;Pitsuc
+    FSD016_Filter = &amp;Pitmod
+    FSD016_Filter = &amp;Pittran
+    FSD016_Filter = &amp;Pitnrel
+    FSD016_Filter = &amp;OrdAct
+    FSD016_Filter &lt; &amp;Pitord
+    FSD016_Filter &lt;&gt; 'S'    
+</code></pre></div><p>Código que referencia al Data Selector FSD016_Filter:</p> <div class="language-GeneXus extra-class"><pre class="language-text"><code>    For each using FSD016_Filter()  
+      ...
+    EndFor
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/objetos-genexus/guide/01-objeto.html" class="prev">
+        Data Provider
+      </a></span> <span class="next"><a href="/objetos-genexus/guide/03-objeto.html">
+        Query
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/objetos-genexus/assets/js/app.4f90df26.js" defer></script><script src="/objetos-genexus/assets/js/2.f7299349.js" defer></script><script src="/objetos-genexus/assets/js/12.abc2a28b.js" defer></script>
+  </body>
+</html>
